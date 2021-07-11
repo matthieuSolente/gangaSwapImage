@@ -588,11 +588,11 @@ Fell free to use this code, test it and leave a comment or suggest improvements
 ### Explanations
 
 1-In a first Yahoo-Ganga conditional comment we insert a div width a "display:none", then the desktop image. This one will be visible from all the desktop mailboxes but will be hided, thanks to the "display:none" declaration on the following webmails : 
-*yandex chrome / yandex firefox<br/>
-*yahoo chrome / yahoo firefox / yahoo safari / yahoo ie11<br/>
-*zimbra chrome<br/>
-*aol chrome / aol firefox<br/>
-*wall!Mail (mobile version) <br/>
+* yandex chrome / yandex firefox<br/>
+* yahoo chrome / yahoo firefox / yahoo safari / yahoo ie11<br/>
+* zimbra chrome<br/>
+* aol chrome / aol firefox<br/>
+* wall!Mail (mobile version) <br/>
 <br/>
 
 A d-content class is applied to the element surrounding the image (if not on the image directly) that allows to hide it in mobile version, so as not to find ourselves 
@@ -604,10 +604,10 @@ With the class="d-gangaYahoo" we finaly display that desktop image on those webm
 --------------------------------------------------------
 2-Inside a second conditional comment, we put the Yahoo-Ganga mobile image:<br/>
 This is for the following mailboxes in mobile : <br/>
-*android 6 gmail imap<br/>
-*android 6 yahoo<br/>
-*android 5 mail imap<br/>
-*android 4 gmail push <br/>
+* android 6 gmail imap<br/>
+* android 6 yahoo<br/>
+* android 5 mail imap<br/>
+* android 4 gmail push <br/>
 As the code is wrapped in a Yahoo-Ganga conditionnal comment, this image (with a red border) will only be visible on those mobile email clients.
 
 ----------------------------------------------------------
