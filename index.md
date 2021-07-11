@@ -1,3 +1,6 @@
+<img src="image/yahoo-ganga.JPG" alt="">
+
+
 ## Ganga Swap Image
 
 I'm sharing here a piece of code that will be useful for all those who do image swapping on email (desktop image / mobile image). The **hybrid email template** already allows you to have an email body that fits on email clients that don't accept media queries. The columns are placed one below the other, and the display is that of a mobile phone. This is the **advantage over a responsive version** which will always display a desktop version on these mobiles (ganga, yahoo). However, there is still one problem to solve, the impossibility of displaying a mobile image on these recalcitrant clients. Ganga and yahoo always displayed the desktop image.
