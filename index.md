@@ -3,7 +3,7 @@
 
 ## Ganga Swap Image
 
-I'm sharing here a piece of code that will be useful for all those who do image swapping on email (desktop image / mobile image). The **hybrid email template** already allows you to have an email body that fits on email clients that don't accept media queries. The columns are placed one below the other, and the display is that of a mobile phone. This is the **advantage over a responsive version** which will always display a desktop version on these mobiles (ganga, yahoo). However, there is still one problem to solve, the impossibility of displaying a mobile image on these recalcitrant clients. Ganga and yahoo always displayed the desktop image.
+I'm sharing here a piece of code that will be useful for all those who do image swapping on email (desktop image / mobile image). The **hybrid email template** already allows you to have an email body that fits on email clients that don't accept media queries. The columns are placed one below the other, and the display is that of a mobile phone. This is the **advantage over a responsive version** which will always display a desktop version on these mobiles (ganga, yahoo). However, there is still one problem to solve, the impossibility of displaying a mobile image on these recalcitrant clients. Ganga and yahoo always displayed the desktop image.<br/>
 Thanks to Mark Robbins genius (see [here](https://github.com/hteumeuleu/email-bugs/issues/95), I finally managed to create an image swap that works, so that all mobile mail clients where media queries are not accepted will now display the mobile image !! . This code can certainly be simplified, optimized, : out of more than 80 mailboxes (according to testi@) only two are still problematic : **Zimbra**, which doesn't display any image at all (neither desktop nor mobile) and **wall! mail** which still displays the mobile version in desktop... 
 
 
@@ -587,26 +587,27 @@ Fell free to use this code, test it and leave a comment or suggest improvements
 
 ### Explanations
 
-1-In a first Yahoo-Ganga conditional comment we insert a div width a "display:none", then the desktop image. This one will be visible from all the desktop mailboxes but will be hided, thanks to the "display:none" declaration on the following webmails : yandex chrome / yandex firefox
-yahoo chrome / yahoo firefox / yahoo safari / yahoo ie11
-zimbra chrome
-aol chrome / aol firefox
-wall!Mail (mobile version) 
-
+1-In a first Yahoo-Ganga conditional comment we insert a div width a "display:none", then the desktop image. This one will be visible from all the desktop mailboxes but will be hided, thanks to the "display:none" declaration on the following webmails : 
+*yandex chrome / yandex firefox<br/>
+*yahoo chrome / yahoo firefox / yahoo safari / yahoo ie11<br/>
+*zimbra chrome<br/>
+*aol chrome / aol firefox<br/>
+*wall!Mail (mobile version) <br/>
+<br/>
 
 A d-content class is applied to the element surrounding the image (if not on the image directly) that allows to hide it in mobile version, so as not to find ourselves 
-with two images in mobile (desktop image + mobile image).
+with two images in mobile (desktop image + mobile image).<br/>
 With the class="d-gangaYahoo" we finaly display that desktop image on those webmails.
 
 
 --------------------------------------------------------   
 --------------------------------------------------------
-2-Inside a second conditional comment, we put the Yahoo-Ganga mobile image:
-This is for the following mailboxes in mobile : 
-android 6 gmail imap
-android 6 yahoo
-android 5 mail imap
-android 4 gmail push 
+2-Inside a second conditional comment, we put the Yahoo-Ganga mobile image:<br/>
+This is for the following mailboxes in mobile : <br/>
+*android 6 gmail imap<br/>
+*android 6 yahoo<br/>
+*android 5 mail imap<br/>
+*android 4 gmail push <br/>
 As the code is wrapped in a Yahoo-Ganga conditionnal comment, this image (with a red border) will only be visible on those mobile email clients.
 
 ----------------------------------------------------------
