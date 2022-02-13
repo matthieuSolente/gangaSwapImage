@@ -8,7 +8,7 @@ A new technique to swap image from desktop to mobile even on ganga
 ## Ganga Swap Image
 
 I'm sharing here a piece of code that will be useful for all those who do image swapping on email (desktop image / mobile image). The **hybrid email template** already allows you to have an email body that fits on email clients that don't accept media queries. The columns are placed one below the other, and the display is that of a mobile phone. This is the **advantage over a responsive version** which will always display a desktop version on these mobiles (ganga, yahoo). To display a 100% width image and component on Ganga, we cand code with a mobile first approach.<br/>
-Thanks to Mark Robbins (see [here](https://github.com/hteumeuleu/email-bugs/issues/95), there is also another technique to create an image swap that works, so that all mobile mail clients where media queries are not accepted will now display the mobile image !! . It's a bit complicated and may not be suitable depending on the situation. According to testi@, in this example, Yandex Yahoo AOL and Zimbra will display the ganga mobile image ... 
+Thanks to Mark Robbins (see [here](https://github.com/hteumeuleu/email-bugs/issues/95) ), there is also another technique to create an image swap that works, so that all mobile mail clients where media queries are not accepted will now display the mobile image !! . It's a bit complicated and may not be suitable depending on the situation. According to testi@, in this example, Yandex Yahoo AOL and Zimbra will display the ganga mobile image ... 
 
 
 ### The code 
